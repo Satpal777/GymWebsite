@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Yuji+Boku&display=swap');
+a{
+    font-family: 'Open Sans', sans-serif;
+}
+.background {
+    height: 100vh;
+    background: linear-gradient(
+                                -45deg,
+                                rgba(255, 0, 0, 0.4),
+                                rgba(0, 0, 0, 0.1),
+                                rgba(0, 0, 0, 0.2),
+                                rgba(0, 255, 21, 0.4)
+    );
+
+}
+body {
+    margin: 0;
+    padding: 0;
+    background: url(img/bg.jpg);
+    background-size: cover;
+    color: white;
+    min-height: 100vh;
+}
+.logo {
+    width: 4rem;
+    margin: 6px;
+}
+.form {
+   padding: 100px 0;
+}
+.form h1{
+    text-align: center;
+    margin-bottom: 10px;
+    font-family: 'Yuji Boku', serif;
+    animation: colorchange 10s linear infinite alternate ;
+}
+
+form {
+    display: flex;
+   justify-content: center;
+   align-content: center;
+   flex-direction: column;
+   margin: auto;
+   width: 30%;
+}
+form input {
+    margin: 10px;
+    padding: 2px 6px;
+}
+footer {
+    position: absolute;
+    bottom: 0%;
+    right: 2%;
+}
+.copyright {
+    color: rgb(228, 211, 211);
+}
+
+@keyframes colorchange {
+    0% {color: violet;}
+    25% {color: rgb(161, 100, 231);}
+    50% {color: rgb(75, 60, 212);}
+    75% {color: rgb(33, 223, 26);}
+    100% {color: rgb(21, 255, 40);}
+}
+
+@media screen and (max-width: 800px) {
+    form{
+       width: 90%; 
+    }
+  }
+  
